@@ -1,0 +1,4 @@
+props:
+  content:
+    type: string/code
+    description: The content of the title

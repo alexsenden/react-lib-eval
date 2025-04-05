@@ -1,0 +1,1 @@
+<Link href=${argHref} text=${argText} target=${argSelf} disabled=${argDisabled} />

@@ -1,0 +1,22 @@
+<div style={{display: 'flex', flexDirection: 'column'}}>
+  <Text type=${"title"} content=${"Apply for a Position"} />
+
+  <Select value=${selectedRole} options=${[ {"value": "Frontend Developer", "label": "Frontend Developer"}, {"value": "Backend Developer", "label": "Backend Developer"}, {"value": "UI/UX Designer", "label": "UI/UX Designer"} ]} onChange=${(value) => setSelectedRole(value)} />
+
+  {selectedRole && (
+    <div style={{display: 'flex', flexDirection: 'column'}}>
+      <Input value=${fullName} onChange=${(e) => setFullName(e.target.value)} label=${"Full Name"} />
+      <TextArea value=${coverLetter} onChange=${(e) => setCoverLetter(e.target.value)} />
+    </div>
+  )}
+
+  <Checkbox checked=${agreed} onChange=${() => setAgreed(!agreed)} label=${"I agree to the terms and conditions"} />
+
+  <Button text=${"Submit Application"} type=${"primary"} onClick=${() => { if (agreed) { setShowModal(true); setSubmitting(true); setTimeout(() => { setSubmitting(false); setShowModal(false); setShowToast(true); }, 2000); }}} />
+
+  <Modal isOpen=${showModal} onClose=${() => setShowModal(false)} title=${"Submitting Application"} content=${<Spinner />} />
+
+  {showToast && (
+    <Toast message=${"Application submitted!"} type=${"success"} onClose=${() => setShowToast(false)} />
+  )}
+</div>

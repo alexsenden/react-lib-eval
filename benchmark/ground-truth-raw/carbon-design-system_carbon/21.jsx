@@ -1,0 +1,4 @@
+<div style={{"display": "flex", "flexDirection": "column"}}>
+  <Button kind='primary' onClick={() => setShowOverviewModal(true)} >{"View Course Overview"}</Button>
+  <Modal modalHeading={"Course Overview"} open={showOverviewModal} onRequestClose={() => setShowOverviewModal(false)} >{ <div style={{"display": "flex", "flexDirection": "column"}}> <Accordion ><AccordionItem title="Course Objectives"><UnorderedList ><ListItem>{objectives1}</ListItem><ListItem>{objectives2}</ListItem><ListItem>{objectives3}</ListItem></UnorderedList></AccordionItem><AccordionItem title="Course Topics"><UnorderedList ><ListItem>{topics1}</ListItem><ListItem>{topics2}</ListItem><ListItem>{topics3}</ListItem></UnorderedList></AccordionItem><AccordionItem title="Requirements"><UnorderedList ><ListItem>{requirements1}</ListItem><ListItem>{requirements2}</ListItem></UnorderedList></AccordionItem></Accordion> </div>}</Modal>
+</div>

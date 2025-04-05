@@ -1,0 +1,1 @@
+''.join([f"<option>{d['label']}</option>" for d in json.loads(arg_value)])

@@ -1,0 +1,15 @@
+<div style={{"display": "flex", "flexDirection": "column"}}>
+  <Input value=${name} onChange=${(e) => setName(e.target.value)} label=${"Name"} />
+  <Input value=${email} onChange=${(e) => setEmail(e.target.value)} label=${"Email"} />
+  <Text type=${"title"} content=${"Would you like to be contacted?"} />
+  <Toggle active=${contactOptIn} onChange=${() => setContactOptIn(!contactOptIn)} />
+  {contactOptIn && ( 
+    <Checkbox checked=${subscribe} onChange=${() =>setSubscribe(!subscribe)} label=${"Subscribe to newsletter"} />
+  )} 
+  <Text type=${"title"} content=${"How was your experience?"} />
+  <RadioButton checked=${experience === "Good"} onChange=${() => setExperience("Good")} label=${"Good"} />
+  <RadioButton checked=${experience === "Neutral"} onChange=${() => setExperience("Neutral")} label=${"Neutral"} />
+  <RadioButton checked=${experience === "Bad"} onChange=${() => setExperience("Bad")} label=${"Bad"} />
+  <TextArea value=${comments} onChange=${(e) => setComments(e.target.value)} />
+  <Button text=${"Submit Feedback"} onClick=${handleSubmit} type=${"primary"} />
+</div>

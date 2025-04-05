@@ -1,0 +1,1 @@
+<Toast message=${argMessage} type=${argType} onClose=${argOnClose} />

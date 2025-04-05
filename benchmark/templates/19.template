@@ -1,0 +1,8 @@
+<Card>
+  <div style={{display: 'flex', flexDirection: 'column'}}>
+    <Text type=${"title"} content=${"Upcoming Reminder"} />
+    <Text type=${"body"} content=${"Dentist appointment at 3:00 PM"} />
+    <Button text=${"Snooze"} type=${"warning"} onClick=${() => setShowToast(true)} />
+    {showToast && <Toast message=${"Reminder snoozed for 10 minutes"} type=${"info"} onClose=${() => setShowToast(false)} />}
+  </div>
+</Card>

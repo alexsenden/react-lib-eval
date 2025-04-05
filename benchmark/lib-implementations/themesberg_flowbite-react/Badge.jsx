@@ -1,0 +1,1 @@
+<Badge color=${argType}>${argContent}</Badge>

@@ -1,0 +1,9 @@
+Create a TermsAndConditions component that allows users to accept terms before proceeding.
+
+At the top, a Checkbox labeled "I agree to the Terms and Conditions".
+
+Below that, a Button labeled "Continue" that is only enabled if the checkbox is checked.
+
+Clicking the button shows a Toast with the message "Thank you for agreeing to the terms.".
+
+The checkbox value is stored in "agreed". The toast is controlled by "showToast".

@@ -1,0 +1,17 @@
+Create a SettingsSummary component that shows different settings based on a Toggle.
+
+At the top, a Toggle labeled "Advanced Mode".
+
+If advanced mode is on, show a Card that includes:
+
+A Text titled "Advanced Settings"
+
+A Checkbox labeled "Enable experimental features"
+
+A Spinner if the setting is loading (based on "loadingAdvanced")
+
+If advanced mode is off, show a Card with a Text that says "Basic settings are enabled."
+
+The toggle value is stored in "advanced".
+The loading state is "loadingAdvanced".
+The checkbox state is "experimental".

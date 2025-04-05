@@ -1,0 +1,1 @@
+<Tabs ><TabList><Tab>Pending</Tab><Tab>Completed</Tab></TabList><TabPanels><TabPanel><UnorderedList ><ListItem>{pending1}</ListItem><ListItem>{pending2}</ListItem></UnorderedList></TabPanel><TabPanel><UnorderedList ><ListItem>{completed1}</ListItem><ListItem>{completed2}</ListItem></UnorderedList></TabPanel></TabPanels></Tabs>

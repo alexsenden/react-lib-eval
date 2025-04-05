@@ -1,0 +1,10 @@
+Create a ProfileBadgeSelector component that allows users to choose a visual badge.
+
+At the top, show a RadioButton group with three badge types: "Pro", "Beginner", "Mentor".
+
+Below that, conditionally show a Badge component styled according to the selected type (success, warning, or info).
+
+At the bottom, a Button labeled "Save Badge" should open a Modal that confirms the badge selection with a single Text component: "Badge saved successfully."
+
+The selected badge is stored in "selectedBadge".
+The modal is controlled by "showModal".

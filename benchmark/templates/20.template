@@ -1,0 +1,6 @@
+<div style={{display: 'flex', flexDirection: 'column'}}>
+  <Text type=${"title"} content=${"Achievements"} />
+  <Badge content=${"Top Performer"} type=${"success"} />
+  <Badge content=${"100 Days Active"} type=${"primary"} />
+  <Badge content=${"Bug Squasher"} type=${"warning"} />
+</div>

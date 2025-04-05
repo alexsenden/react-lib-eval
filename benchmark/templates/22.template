@@ -1,0 +1,5 @@
+<div style={{"display": "flex", "flexDirection": "column"}}>
+  <Input value=${email} onChange=${(e) => setEmail(e.target.value)} label=${"Email Address"} />
+  <Checkbox checked=${agree} onChange=${() => setAgree(!agree)} label=${"I agree to the terms and conditions"} />
+  <Button text=${"Sign Up"} onClick=${handleSignup} disabled=${!agree} type=${"primary"} />
+</div>

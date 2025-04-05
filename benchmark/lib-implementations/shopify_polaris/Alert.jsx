@@ -1,0 +1,1 @@
+<Banner tone=${argType} ><Text as="p">${argContent}</Text></Banner>

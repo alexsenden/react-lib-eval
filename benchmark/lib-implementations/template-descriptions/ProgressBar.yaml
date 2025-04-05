@@ -1,0 +1,10 @@
+props:
+  progress: # 1
+    type: float (0-1)
+    description: The progress of the progress bar.
+  totalSteps: # 2
+    type: int
+    description: The total number of steps in the progress bar.
+  currentStep: # 2
+    type: int
+    description: The current step in the progress bar.

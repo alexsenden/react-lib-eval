@@ -1,0 +1,1 @@
+<div style={{display: 'flex', flexDirection: 'row'}}><Input value=${argValue} disabled=${argDisabled} onChange=${argOnChange} placeholder=${argPlaceholder}/><Text content=${argLabel} type='body' /></div>

@@ -1,0 +1,5 @@
+Create a BadgeDisplay component that displays a user's achievements.
+
+A Text component says "Achievements".
+
+Below it, display three Badge components: "Top Performer", "100 Days Active", "Bug Squasher".

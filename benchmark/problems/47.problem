@@ -1,0 +1,13 @@
+Create a ThemeCustomizer component to let users tweak the UI theme.
+
+Display inside a Card:
+
+A Select to choose a theme: "Light", "Dark", "Solarized"
+
+A Toggle to enable high-contrast mode
+
+A Preview section (just a Text) that updates live
+
+A Button to "Apply Settings" which opens a Modal with a Text: "Theme applied."
+
+Use "theme", "highContrast", "fontSize", and "showModal" as state.

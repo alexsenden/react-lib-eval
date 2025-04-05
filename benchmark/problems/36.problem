@@ -1,0 +1,9 @@
+Create a LanguageSelector component that lets users choose their language.
+
+At the top, display a Text component that says "Select Language".
+
+Below it, use a Select dropdown with options: English, Spanish, German, Japanese.
+
+When the user selects a language, show a Toast that says "Language changed to [selected language]".
+
+The selected language is stored in a variable called "language". The Toast visibility is controlled by "showToast".

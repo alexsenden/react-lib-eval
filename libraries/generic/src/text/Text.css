@@ -1,0 +1,28 @@
+.text {
+  margin: 0;
+  padding: 0;
+}
+
+.text.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.text.subtitle {
+  font-size: 20px;
+  font-weight: semi-bold;
+  color: #555;
+}
+
+.text.body {
+  font-size: 16px;
+  font-weight: normal;
+  color: #666;
+}
+
+.text.caption {
+  font-size: 12px;
+  font-weight: light;
+  color: #888;
+}

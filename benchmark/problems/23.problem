@@ -1,0 +1,13 @@
+Create a ProductComparison component that allows users to compare two products.
+
+Each product has a Card with:
+
+A Text title (e.g., "Product A", "Product B")
+
+A Badge showing "Available" or "Out of Stock"
+
+A List of features (e.g., "Waterproof", "Bluetooth", "1-year warranty")
+
+Below both Cards, place a Button labeled "Show Comparison Summary" that opens a Modal titled "Comparison Summary" with a List of common features.
+
+The modal is controlled by the "showSummary" variable.

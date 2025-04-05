@@ -1,0 +1,11 @@
+Create a NewsletterSignup component that allows users to sign up for a newsletter. The layout should be as follows:
+
+At the top, a Text component with the title "Subscribe to our Newsletter".
+
+Below that, an Input field for the user’s email address.
+
+Next to the input field, a Button labeled "Sign Up" submits the form.
+
+When the user clicks "Sign Up", a Toast should appear with the message "Thanks for subscribing!" if the email is not empty.
+
+The email is stored in a variable named "email". The toast is controlled with a variable named "showToast".

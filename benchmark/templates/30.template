@@ -1,0 +1,4 @@
+<div style={{"display": "flex", "flexDirection": "column"}}>
+  <Button text=${"View Notifications"} onClick=${() => setShowNotifications(true)} type=${"primary"} />
+  <Modal isOpen=${showNotifications} onClose=${() => setShowNotifications(false)} title=${"Notification Center"} content=${ <div style={{"display": "flex", "flexDirection": "column"}}> <Text type=${"title"} content=${"Your Notifications"} /> <List items=${notifications} /> </div> } />
+</div>

@@ -1,0 +1,6 @@
+<div style={{display: 'flex', flexDirection: 'column'}}>
+  <Text type=${"title"} content=${"Login"} />
+  <Input value=${username} onChange=${(e) => setUsername(e.target.value)} label=${"Username"} />
+  <Input value=${password} onChange=${(e) => setPassword(e.target.value)} label=${"Password"} />
+  <Button text=${"Log In"} type=${"primary"} onClick=${handleLogin} />
+</div>

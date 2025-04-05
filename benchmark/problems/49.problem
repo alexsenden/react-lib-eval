@@ -1,0 +1,21 @@
+Create a QuizResultCard component to show a user’s quiz summary.
+
+Inside a Card, show:
+
+A Text titled "Your Results"
+
+A ProgressBar showing score percentage
+
+A Badge with type "success", "warning", or "error" based on the score range (score stored in "score")
+
+A Text feedback message: "Great job!", "Almost there!", or "Try again."
+
+A Button to "Review Answers" which opens a Modal with a Text: "Redirecting to review page..."
+
+Score logic:
+
+>= 80 → success
+
+50–79 → warning
+
+< 50 → error

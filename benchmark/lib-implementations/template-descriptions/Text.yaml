@@ -1,0 +1,7 @@
+props:
+  type:
+    type: title | subtitle | body | caption
+    description: The type of the text
+  content:
+    type: string/code
+    description: The content of the text

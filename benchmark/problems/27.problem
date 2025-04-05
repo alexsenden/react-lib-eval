@@ -1,0 +1,17 @@
+Create a FeedbackForm component that allows users to submit feedback on a service.
+
+The layout should be as follows:
+
+At the top, an Input labeled "Name" where users can type their name (stored in the "name" variable).
+
+Below the name, an Input labeled "Email" for the user's email (stored in the "email" variable).
+
+Below the email, a section labeled "Would you like to be contacted?" containing a Toggle component (state stored in "contactOptIn").
+
+If "contactOptIn" is true, show a Checkbox labeled "Subscribe to newsletter" (state stored in "subscribe").
+
+Below that, a section titled "How was your experience?" containing three RadioButton components labeled "Good", "Neutral", and "Bad" (selected value stored in "experience").
+
+Finally, a TextArea labeled "Additional Comments" for users to leave comments (stored in "comments" variable).
+
+A Button at the bottom labeled "Submit Feedback".

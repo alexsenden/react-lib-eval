@@ -1,0 +1,1 @@
+<ProgressBar steps=${argTotalSteps} currentStep=${argCurrentStep} />

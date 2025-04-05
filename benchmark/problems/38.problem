@@ -1,0 +1,29 @@
+Create a UserSurveyForm component that gathers feedback from users.
+
+The layout should be:
+
+A Text header: "User Feedback Survey"
+
+A RadioButton group asking "How satisfied are you?" with options: "Very Satisfied", "Satisfied", "Neutral", "Dissatisfied", and "Very Dissatisfied"
+
+A TextArea for additional comments, only shown if the selected satisfaction level is not "Very Satisfied"
+
+A Toggle labeled "Would you like to be contacted for follow-up?"
+
+If the toggle is enabled, show an Input field for the user's email
+
+A Button at the bottom labeled "Submit Feedback"
+
+On submission, show a Toast with the message "Thank you for your feedback!"
+
+Variables:
+
+"satisfaction" (string)
+
+"comments" (string)
+
+"followUp" (boolean)
+
+"email" (string)
+
+"showToast" (boolean)

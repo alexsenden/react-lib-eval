@@ -1,0 +1,14 @@
+<div style={{display: 'flex', flexDirection: 'column'}}>
+  <Checkbox checked=${notifications} onChange=${() => setNotifications(!notifications)} label=${"Enable Notifications"}/>
+
+  <Text type=${"title"} content=${"Theme Selection"} />
+  <RadioButton checked=${theme === "light"} onChange=${() => setTheme("light")} label=${"Light"}
+  <RadioButton checked=${theme === "dark"} onChange=${() => setTheme("dark")} label=${"Dark"}
+  <RadioButton checked=${theme === "system"} onChange=${() => setTheme("system")} label=${"System"}
+
+  <Text type=${"title"} content=${"Preferred Language"} />
+  <Select value=${'English'} options=${[{"value": "English", "label": "English"}, {"value": "Spanish", "label": "Spanish"}, {"value": "French", "label": "French"}]} />
+
+  <Text type=${"title"} content=${"Auto-Updates"} />
+  <Toggle active=${autoUpdate} onChange=${() => setAutoUpdate(!autoUpdate)} />
+</div>

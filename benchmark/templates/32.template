@@ -1,0 +1,15 @@
+<div style={{display: 'flex', flexDirection: 'column'}}>
+  <Text type=${"title"} content=${"Contact Support"} />
+
+  <Input value=${name} onChange=${(e) => setName(e.target.value)} label=${"Name"} />
+  <Input value=${email} onChange=${(e) => setEmail(e.target.value)} label=${"Email"} />
+  <TextArea value=${message} onChange=${(e) => setMessage(e.target.value)} label=${"Message"} />
+
+  <Toggle active=${subscribe} onChange=${() => setSubscribe(!subscribe)} label=${"Subscribe to Updates"} />
+
+  <Button type=${"primary"} text=${"Submit"} onClick=${() => { if (name && email && message) { setShowToast(true) }}} />
+
+  {showToast && (
+    <Toast message=${"Your message has been submitted!"} type=${"success"} onClose=${() => setShowToast(false)} />
+  )}
+</div>

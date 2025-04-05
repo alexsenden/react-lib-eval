@@ -1,0 +1,7 @@
+Create a NotificationToggle component that allows users to enable or disable all notifications.
+
+At the top, a Toggle switch labeled "Notifications".
+
+Below that, display a Badge that says "Enabled" or "Disabled" based on the current state.
+
+The toggle value is stored in "notificationsEnabled".

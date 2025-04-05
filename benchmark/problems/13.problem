@@ -1,0 +1,9 @@
+Create a FeedbackForm component that collects user feedback. The layout should be:
+
+A Text component at the top labeled "Feedback".
+
+Below, a TextArea for user input, and a Select for rating the experience with options "Poor", "Average", and "Excellent".
+
+At the bottom, a Button labeled "Submit Feedback" that sets feedbackSubmitted to true.
+
+If feedbackSubmitted is true, display an Alert with content "Feedback submitted successfully!".

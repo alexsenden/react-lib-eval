@@ -1,0 +1,7 @@
+Create a LoadingIndicator component that displays a Spinner while data is being fetched.
+
+At the top, show a Button labeled "Load Data".
+
+When clicked, set loading to true. While loading is true, display a Spinner.
+
+After 3 seconds, loading should automatically become false.

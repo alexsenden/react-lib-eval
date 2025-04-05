@@ -1,0 +1,13 @@
+Create a ContactSupport component that allows users to request technical support. The layout should be as follows:
+
+A Card component wraps the entire form.
+
+Inside the card, show a title using a Text component: "Contact Support".
+
+Below that, include an Input field labeled "Issue Title" and a TextArea for the issue description.
+
+Below the TextArea, add a Select dropdown labeled "Priority" with options "Low", "Medium", and "High". The selected priority is stored in a variable named priority.
+
+At the bottom, a Button labeled "Send Request" sets a variable submitted to true.
+
+If submitted is true, display an Alert component with type "info" and content "Your support request has been submitted."

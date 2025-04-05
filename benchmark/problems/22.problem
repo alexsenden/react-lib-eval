@@ -1,0 +1,9 @@
+Create a NewsletterSignup component that allows users to sign up for a newsletter.
+
+The layout should be as follows:
+
+An Input labeled "Email Address" where users can type their email (stored in the variable "email").
+
+A Checkbox labeled "I agree to the terms and conditions" (state stored in "agree").
+
+A Button labeled "Sign Up" that is disabled unless the checkbox is checked.

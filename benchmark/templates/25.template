@@ -1,0 +1,4 @@
+<div style={{"display": "flex", "flexDirection": "column"}}>
+  <Button text=${"View Summary"} onClick=${() => setShowSummary(true)} type=${"primary"} />
+  <Modal isOpen=${showSummary} onClose=${() => setShowSummary(false)} title=${"Quiz Summary"} content=${ <div style={{"display": "flex", "flexDirection": "column"}}> <Text type=${"title"} content=${"You scored 8/10"} /> <ProgressBar progress=${0.8} totalSteps=${1} argCurrentStep=${1} /> <List items=${wrongAnswers} /> </div> } />
+</div>

@@ -1,0 +1,1 @@
+<Text textStyle=${argType} >${argContent}</Text>

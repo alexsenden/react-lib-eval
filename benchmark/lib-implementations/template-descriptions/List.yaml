@@ -1,0 +1,4 @@
+props: 
+  items:
+    type: array<element>
+    description: The items to display in the list.

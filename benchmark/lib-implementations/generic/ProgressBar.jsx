@@ -1,0 +1,1 @@
+<ProgressBar progress=${argProgress * 100} />

@@ -1,0 +1,1 @@
+<StyledLabel><Checkbox defaultChecked=${argChecked} disabled=${argDisabled} onChange=${argOnChange} />${argLabel}</StyledLabel>

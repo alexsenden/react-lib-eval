@@ -1,0 +1,1 @@
+''.join([f'<Accordion.Panel><Accordion.Title>{d["title"]}</Accordion.Title><Accordion.Content>{d["content"]}</Accordion.Content></Accordion.Panel>' for d in json.loads(arg_value.replace('"content": ', '"content": "').replace('>},', '>"},').replace('>}]', '>"}]'))])

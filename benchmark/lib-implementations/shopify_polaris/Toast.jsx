@@ -1,0 +1,1 @@
+<Toast content=${argMessage} onDismiss=${argOnClose} />

@@ -1,0 +1,1 @@
+{"info": "'info'", "warning": "'warning'", "error": "'critical'", "success": "'success'"}.get(arg_value)

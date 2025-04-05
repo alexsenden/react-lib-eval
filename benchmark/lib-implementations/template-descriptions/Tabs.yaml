@@ -1,0 +1,11 @@
+props:
+  tabs:
+    type: array<object>
+    description: The tabs to display
+    obj-properties:
+      label:
+        type: string
+        description: The label of the tab
+      content:
+        type: element # Must come second
+        description: The content of the tab 

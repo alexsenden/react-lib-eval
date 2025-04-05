@@ -1,0 +1,13 @@
+props:
+  href: 
+    type: string/code
+    description: The URL to link to
+  text:
+    type: string/code
+    description: The text of the link
+  disabled:
+    type: boolean
+    description: Whether the link is disabled
+  target: 
+    type: _self | _blank
+    description: The target of the link

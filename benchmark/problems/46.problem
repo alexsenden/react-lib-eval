@@ -1,0 +1,17 @@
+Create a UserOnboarding component with progressive steps.
+
+At the top, show a ProgressBar (value depends on current step).
+
+Steps:
+
+Select a role: RadioButtons ("Developer", "Designer", "Manager")
+
+Enter email: Input with placeholder
+
+Agree to terms: Checkbox
+
+Done: Show a Badge that says "Setup Complete" (type: success)
+
+Use a Button labeled "Next" to go to the next step.
+
+Track step with "step" (0–3), role with "role", email with "email", and agreement with "agreed".

@@ -1,0 +1,4 @@
+<div style={{"display": "flex", "flexDirection": "column"}}>
+  <Accordion items=${[{"title": "Password Reset", "content": <Text content=${'Go to settings and click `Reset Password`.'} type=${'body'}/>}, {"title": "Billing Questions", "content": <Text content=${'Email billing@example.com.'} type=${'body'} />}, {"title": "Technical Issues", "content": <Text content=${'Submit a ticket at /support/ticket.'} type=${'body'} />}, {"title": "Account Deletion", "content": <Text content=${'Visit /account/delete to begin the process.'} type={'body'}/>}]} />
+  <Link href=${"/support/contact"} text=${"Contact Support"} />
+</div>

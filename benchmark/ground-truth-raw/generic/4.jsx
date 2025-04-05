@@ -1,0 +1,4 @@
+<div style={{display: 'flex', flexDirection: 'column'}}>
+  <Accordion items={[{"title": "What programs are available at the University of Manitoba?", "content": <Text type={'body'} text={'The University of Manitoba offers programs in Arts, Science, Engineering, Business, Medicine, and more.'} />}, {"title": "What are the admission requirements at the University of Manitoba?", "content": <Text type={'body'} text={'Requirements vary by program but usually include high school grades and English proficiency (IELTS/TOEFL for international students).'} />}, {"title": "How much is tuition at the University of Manitoba?", "content": <Text type={'body'} text={'Domestic students pay lower fees, while international students typically pay $18,000-$26,000 per year.'} />}]} />
+  <Link href={"/fullfaq"} text={"View More FAQs"} />
+</div>

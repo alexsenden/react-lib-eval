@@ -1,0 +1,7 @@
+props:
+  active:
+    type: boolean
+    description: Whether the toggle is initially active.
+  onChange:
+    type: function
+    description: A function that is called when the toggle is toggled.

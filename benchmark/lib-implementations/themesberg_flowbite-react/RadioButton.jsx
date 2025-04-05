@@ -1,0 +1,1 @@
+<div style={{display: 'flex', flexDirection: 'row'}}><RadioButton checked=${argChecked} onChange=${argOnChange}/><Text content=${argLabel} type='body' /></div>

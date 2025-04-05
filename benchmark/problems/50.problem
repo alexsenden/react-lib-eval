@@ -1,0 +1,23 @@
+Create an EventDetails component to show detailed information about a live event.
+
+Inside a Card, render:
+
+A Text title: "Event Details"
+
+An Avatar displaying the event organizer's profile picture, using the url "https://picsum.photos/100"
+
+A Text with the event title ("React Summit 2025")
+
+A Text with the event description ("A gathering of the brightest minds in React.")
+
+A ProgressBar to show the event's progress (50% complete)
+
+A Checkbox to allow users to opt into receiving event updates
+
+A Button that opens a Modal titled "Event Updates". The modal should contain a Text with details about the event's next steps.
+
+State variables:
+
+"isSubscribed" (boolean)
+
+"showModal" (boolean)

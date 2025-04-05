@@ -1,0 +1,1 @@
+'{' + json.dumps([{"id": d["label"], "text": d["label"], "children": d["content"]} for d in json.loads(arg_value.replace('"content": ', '"content": "').replace('>},', '>"},').replace('>}]', '>"}]'))]).replace('"children": "', '"children": ').replace('>"},', '>},').replace('>"}]', '>}]') + '}'

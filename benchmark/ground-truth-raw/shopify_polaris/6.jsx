@@ -1,0 +1,1 @@
+<Tabs tabs={[{"id": "Pending", "content": <List ordered ><List.Item>{pending1}</List.Item><List.Item>{pending2}</List.Item></List>}, {"id": "Completed", "content": <List ordered ><List.Item>{completed1}</List.Item><List.Item>{completed2}</List.Item></List>}]} />

@@ -1,0 +1,16 @@
+Create a UserProfileCard component that displays a user's profile information. The layout should be as follows:
+
+A Card component serves as the main container.
+
+Inside the card, at the top left, an Avatar component displays the user's profile picture from the url "https://picsum.photos/150". The avatar's alt text should say "Avatar".
+
+Next to the avatar, a Badge component displays the user’s status ("Online" or "Offline").
+
+Below the avatar and badge, display the user's name (John Doe) and a short bio ("Frontend Developer passionate about React.").
+
+A Button component labeled "Follow" should be placed at the bottom of the card. Clicking it should toggle between "Follow" and "Unfollow".
+
+A Link titled "View Profile" located below the button allows navigation to the full user profile at the "/profile" route.
+
+The users online status should be stored in a variable called "isOnline".
+The following status of the user should be stored in a variable called "following".

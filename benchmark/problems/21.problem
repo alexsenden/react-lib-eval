@@ -1,0 +1,13 @@
+Create a CourseOverview component that displays an overview of a course using a Modal, List, and Accordion.
+
+At the top, a Button labeled "View Course Overview" opens a Modal titled "Course Overview". The Modal is controlled with a variable named "showOverviewModal".
+
+Inside the Modal, display an Accordion with 3 sections:
+
+Title: "Course Objectives", Content: A List of items — "Understand React fundamentals", "Build UI components", "Manage application state", stored in variables "objectives1", "objectives2", etc.
+
+Title: "Course Topics", Content: A List of items — "JSX", "Props and State", "Hooks", stored in variables "topics1", "topics1", etc.
+
+Title: "Requirements", Content: A List of items — "Basic JavaScript knowledge", "Familiarity with HTML/CSS", stored in variables "requirements1", "requirements2", etc.
+
+At the bottom of the Modal, include a Button labeled "Close" that closes the modal.

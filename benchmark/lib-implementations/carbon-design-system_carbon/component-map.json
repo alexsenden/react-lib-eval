@@ -1,0 +1,22 @@
+{
+  "Accordion": "Accordion",
+  "Alert": "Alert",
+  "Avatar": "Avatar",
+  "Badge": "Badge",
+  "Button": "Button",
+  "Card": "Card",
+  "Checkbox": "Checkbox",
+  "Input": "TextInput",
+  "Link": "Link",
+  "List": "UnorderedList",
+  "Modal": "Modal",
+  "ProgressBar": "ProgressBar",
+  "RadioButton": "RadioButton",
+  "Select": "Select",
+  "Spinner": "Loading",
+  "Tabs": "Tabs",
+  "Text": "Text",
+  "TextArea": "TextArea",
+  "Toast": "ToastNotification",
+  "Toggle": "Toggle"
+}

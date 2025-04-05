@@ -1,0 +1,1 @@
+<Button color=${argType} onClick=${argOnClick} disabled=${argDisabled}>${argText}</Button>

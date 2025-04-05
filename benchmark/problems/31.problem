@@ -1,0 +1,19 @@
+Create a UserPreferencesCard component that allows users to configure their account settings. The layout should be as follows:
+
+A Card acts as the container.
+
+Inside the card:
+
+A Text element titled "User Preferences" at the top
+
+A Toggle switch to turn "Dark Mode" on or off
+
+A Checkbox labeled "Enable 2FA"
+
+A Select dropdown for selecting time zone. Available options: PST, EST, GMT
+
+A Button labeled "Save Settings" at the bottom of the card
+
+The dark mode setting is controlled by the variable "darkMode".
+The 2FA setting is stored in the variable "twoFA".
+The selected time zone is stored in the variable "timeZone".

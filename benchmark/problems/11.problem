@@ -1,0 +1,7 @@
+Create a LoginForm component that allows a user to log in. The layout should be as follows:
+
+A Text component at the top displays "Login".
+
+Below that, include two Input fields: one for "Username" and another for "Password".
+
+Below the inputs, include a Button labeled "Log In". Clicking the button should trigger a function called handleLogin.

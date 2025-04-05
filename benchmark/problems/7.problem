@@ -1,0 +1,17 @@
+Create a FeedbackForm component that allows users to submit feedback about a service. The layout should be as follows:
+
+At the top, display a title using the Text component that reads "We value your feedback!".
+
+Below the title, include an Input field for the user's name.
+
+Under the name input, include an Input field for the user's email.
+
+Below the email input, provide a TextArea where users can describe their experience.
+
+Beneath the TextArea, include a Checkbox labeled "Subscribe to our newsletter".
+
+At the bottom of the form, include a Button labeled "Submit Feedback" that when clicked sets a variable named submitted to true.
+
+If submitted is true, display a Toast component at the bottom of the component with the message: "Thank you for your feedback!"
+
+The user’s name should be stored in a variable called name, email in email, experience in experience, and the newsletter opt-in in subscribed.

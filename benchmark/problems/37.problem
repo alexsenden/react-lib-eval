@@ -1,0 +1,13 @@
+Create a PasswordStrengthChecker component that lets users input a password and see its strength.
+
+An Input field labeled "Password" should accept the password. Below it, display a ProgressBar representing strength.
+
+The strength is calculated based on password length:
+
+Less than 4: 0%
+
+4–7: 50%
+
+8 or more: 100%
+
+The password is stored in a variable called "password". The progress value is stored in "strength".

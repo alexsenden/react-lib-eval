@@ -1,0 +1,16 @@
+Create a ProfileStatusCard that displays the user’s current status and actions.
+
+Use a Card as the container.
+
+Inside the card, display:
+
+An Avatar with the src "https://picsum.photos/100"
+
+A Badge showing "Online" or "Offline" (based on "isOnline")
+
+A Button labeled "Toggle Status" to switch between online/offline
+
+A Toast when toggled, with the message "Status updated."
+
+The user’s status is stored in "isOnline".
+The toast is controlled by "showToast".

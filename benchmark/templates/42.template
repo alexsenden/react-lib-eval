@@ -1,0 +1,13 @@
+<div style={{display: 'flex', flexDirection: 'column'}}>
+  <RadioButton checked=${selectedBadge === "Pro"} onChange=${() => setSelectedBadge("Pro")} label=${"Pro"} />
+  <RadioButton checked=${selectedBadge === "Beginner"} onChange=${() => setSelectedBadge("Beginner")} label=${"Beginner"} />
+  <RadioButton checked=${selectedBadge === "Mentor"} onChange=${() => setSelectedBadge("Mentor")} label=${"Mentor"} />
+
+  {selectedBadge && (
+    <Badge content=${selectedBadge} type=${selectedBadge === "Pro" ? "success" : selectedBadge === "Beginner" ? "warning" : "info"} />
+  )}
+
+  <Button text=${"Save Badge"} type=${"primary"} onClick=${() => setShowModal(true)} />
+
+  <Modal isOpen=${showModal} onClose=${() => setShowModal(false)} title=${"Saved"} content=${<Text type=${"body"} content=${"Badge saved successfully."} />} />
+</div>

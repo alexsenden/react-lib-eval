@@ -1,0 +1,1 @@
+''.join([f"<ListItem>{{{item.strip()}}}</ListItem>" for item in re.findall(r'\w+', arg_value)])

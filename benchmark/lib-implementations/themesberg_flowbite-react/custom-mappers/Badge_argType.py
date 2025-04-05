@@ -1,0 +1,1 @@
+"{" + arg_value.replace("primary", "'info'").replace("warning", "'warning'").replace("error", "'failure'").replace("success", "'success'").replace("\"'", "'").replace("'\"", "'") + "}"

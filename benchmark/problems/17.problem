@@ -1,0 +1,5 @@
+Create a ThemeToggle component that allows switching between light and dark themes.
+
+A Toggle labeled "Dark Mode" should control the boolean darkMode.
+
+Below the toggle, display the current theme as a Badge ("Light Mode" or "Dark Mode").

@@ -1,0 +1,1 @@
+{"title": "'title1'", "subtitle": "'subheading1'", "body": "'paragraph'", "caption": "'caption'"}.get(arg_value)

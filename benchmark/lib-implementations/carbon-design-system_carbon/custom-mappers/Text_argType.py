@@ -1,0 +1,1 @@
+{"title": "'h1'", "subtitle": "'h2'", "body": "'p'", "caption": "'span'"}.get(arg_value)

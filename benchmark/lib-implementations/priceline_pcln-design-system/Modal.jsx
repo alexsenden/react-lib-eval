@@ -1,0 +1,1 @@
+<Modal isOpen=${argIsOpen} onClose=${argOnClose} title=${argTitle} content=${argContent} />

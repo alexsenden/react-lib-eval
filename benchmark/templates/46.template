@@ -1,0 +1,27 @@
+<div style={{display: 'flex', flexDirection: 'column'}}>
+  <ProgressBar value=${(step / 3) * 100} />
+
+  {step === 0 && (
+    <>
+      <RadioButton checked=${role === "Developer"} onChange=${() => setRole("Developer")} label=${"Developer"} />
+      <RadioButton checked=${role === "Designer"} onChange=${() => setRole("Designer")} label=${"Designer"} />
+      <RadioButton checked=${role === "Manager"} onChange=${() => setRole("Manager")} label=${"Manager"} />
+    </>
+  )}
+
+  {step === 1 && (
+    <Input value=${email} onChange=${(e) => setEmail(e.target.value)} placeholder=${"Enter your email"} />
+  )}
+
+  {step === 2 && (
+    <Checkbox checked=${agreed} onChange=${() => setAgreed(!agreed)} label=${"I agree to the terms"} />
+  )}
+
+  {step === 3 && (
+    <Badge content=${"Setup Complete"} type=${"success"} />
+  )}
+
+  {step < 3 && (
+    <Button text=${"Next"} type=${"primary"} onClick=${() => setStep(step + 1)} />
+  )}
+</div>

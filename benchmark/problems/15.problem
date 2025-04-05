@@ -1,0 +1,9 @@
+Create a LanguageSelector component that allows the user to pick a language.
+
+A Text component at the top says "Select Language".
+
+Below that, a Select component with values "English", "Spanish", "German", "French".
+
+Below the select, a Button labeled "Confirm" sets confirmed to true.
+
+When confirmed is true, display a Toast that says "Language set to [language]".

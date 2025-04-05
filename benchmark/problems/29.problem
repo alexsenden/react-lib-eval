@@ -1,0 +1,9 @@
+Create a StatusUpdate component that allows a user to post a quick status message.
+
+The layout should be as follows:
+
+An Input labeled "Username" where the user types their username (stored in "username").
+
+A TextArea labeled "What's on your mind?" where the user writes their status (stored in "status").
+
+A Button labeled "Post" that triggers a function called "handlePost".

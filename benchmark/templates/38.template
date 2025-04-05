@@ -1,0 +1,25 @@
+<div style={{display: 'flex', flexDirection: 'column'}}>
+  <Text type=${"title"} content=${"User Feedback Survey"} />
+
+  <RadioButton checked=${satisfaction === "Very Satisfied"} onChange=${() => setSatisfaction("Very Satisfied")} label=${"Very Satisfied"} />
+  <RadioButton checked=${satisfaction === "Satisfied"} onChange=${() => setSatisfaction("Satisfied")} label=${"Satisfied"} />
+  <RadioButton checked=${satisfaction === "Neutral"} onChange=${() => setSatisfaction("Neutral")} label=${"Neutral"} />
+  <RadioButton checked=${satisfaction === "Dissatisfied"} onChange=${() => setSatisfaction("Dissatisfied")} label=${"Dissatisfied"} />
+  <RadioButton checked=${satisfaction === "Very Dissatisfied"} onChange=${() => setSatisfaction("Very Dissatisfied")} label=${"Very Dissatisfied"} />
+
+  {satisfaction !== "Very Satisfied" && (
+    <TextArea value=${comments} onChange=${(e) => setComments(e.target.value)} />
+  )}
+
+  <Toggle active=${followUp} onChange=${() => setFollowUp(!followUp)} />
+
+  {followUp && (
+    <Input value=${email} onChange=${(e) => setEmail(e.target.value)} label=${"Your Email"} />
+  )}
+
+  <Button text=${"Submit Feedback"} type=${"primary"} onClick=${() => setShowToast(true)} />
+
+  {showToast && (
+    <Toast message=${"Thank you for your feedback!"} type=${"info"} onClose=${() => setShowToast(false)} />
+  )}
+</div>

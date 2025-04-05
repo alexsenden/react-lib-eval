@@ -1,0 +1,1 @@
+<Tabs ><Tabs.Item title="Pending"><List ordered ><List.Item>{pending1}</List.Item><List.Item>{pending2}</List.Item></List></Tabs.Item><Tabs.Item title="Completed"><List ordered ><List.Item>{completed1}</List.Item><List.Item>{completed2}</List.Item></List></Tabs.Item></Tabs>

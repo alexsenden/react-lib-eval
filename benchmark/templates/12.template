@@ -1,0 +1,7 @@
+<div style={{display: 'flex', flexDirection: 'column'}}>
+  <Text type=${"title"} content=${"Subscribe to our Newsletter"} />
+  <Input value=${email} onChange=${(e) => setEmail(e.target.value)} label=${"Email"} />
+  <Checkbox checked=${weeklyUpdates} onChange=${() => setWeeklyUpdates(!weeklyUpdates)} label=${"Receive weekly updates"} />
+  <Button text=${"Subscribe"} type=${"primary"} onClick=${() => setSubscribed(true)} />
+  {subscribed && <Toast message=${"Thank you for subscribing!"} type=${"success"} onClose=${() => setSubscribed(false)} />}
+</div>

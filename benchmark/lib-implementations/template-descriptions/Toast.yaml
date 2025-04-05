@@ -1,0 +1,10 @@
+props:
+  message:
+    type: string
+    description: The message to display in the toast.
+  type:
+    type: info | warning | error | success
+    description: The type of the toast.
+  onClose:
+    type: function
+    description: The function to be called when the toast is closed.

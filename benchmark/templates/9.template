@@ -1,0 +1,10 @@
+<div style={{display: 'flex', flexDirection: 'column'}}>
+  <Text type=${"title"} content=${"Daily Habits Survey"} />
+  <Text type=${"body"} content=${"Do you exercise daily?"} />
+  <RadioButton checked=${exercise === "Yes"} onChange=${() => setExercise("Yes")} label=${"Yes"} />
+  <RadioButton checked=${exercise === "No"} onChange=${() => setExercise("No")} label=${"No"} />
+  <Text type=${"body"} content=${"Favorite Fruit"} />
+  <Select value=${fruit} options=${[{"value": "Apple", "label": "Apple"}, {"value": "Banana", "label": "Banana"}, {"value": "Orange", "label": "Orange"}]} />
+  <Button text=${"Submit Survey"} type=${"primary"} onClick=${() => setSubmitted(true)} />
+  {submitted && <Toast message=${"Survey submitted. Thank you!"} type=${"success"} onClose=${() => setSubmitted(false)} />}
+</div>

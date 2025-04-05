@@ -1,0 +1,4 @@
+<div style={{display: 'flex', flexDirection: 'column'}}>
+  <Toggle active=${notificationsEnabled} onChange=${() => setNotificationsEnabled(!notificationsEnabled)} />
+  <Badge content=${notificationsEnabled ? "Enabled" : "Disabled"} type=${notificationsEnabled ? "success" : "error"} />
+</div>

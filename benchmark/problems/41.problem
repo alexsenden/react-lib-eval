@@ -1,0 +1,14 @@
+Create a FeedbackForm component where users can leave feedback on a recent experience.
+
+At the top, a Select dropdown asks "How was your experience?" with options: Excellent, Good, Bad.
+
+If the selected option is "Bad", show a TextArea asking "What went wrong?".
+
+Below that, include a Checkbox labeled "Subscribe to updates about this issue".
+
+Finally, a Button labeled "Submit" triggers a Toast that says "Thank you for your feedback."
+
+The selected experience is stored in "experience".
+The explanation is stored in "badFeedback".
+The checkbox state is stored in "subscribed".
+The toast visibility is stored in "showToast".

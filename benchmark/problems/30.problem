@@ -1,0 +1,13 @@
+Create a NotificationCenter component that shows user notifications in a modal.
+
+A Button labeled "View Notifications" opens the modal, controlled by the variable "showNotifications".
+
+Inside the modal:
+
+A Text component titled "Your Notifications"
+
+A List of notification strings stored in the "notifications" variable
+
+A Button labeled "Mark All as Read" that clears the list
+
+A Button labeled "Close" that closes the modal

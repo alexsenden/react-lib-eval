@@ -1,0 +1,1 @@
+<Toast colorScheme=${argType} onRemoveClick=${argOnClose} >${argMessage}</Toast>

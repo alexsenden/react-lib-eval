@@ -1,0 +1,1 @@
+"".join(f'<Tabs.Item title="{d["label"]}">{d["content"]}</Tabs.Item>' for d in json.loads(arg_value.replace('"content": ', '"content": "').replace('>},', '>"},').replace('>}]', '>"}]')))

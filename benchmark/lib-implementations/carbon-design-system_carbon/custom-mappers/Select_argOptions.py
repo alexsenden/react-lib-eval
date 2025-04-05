@@ -1,0 +1,1 @@
+''.join([f"<SelectItem value='{d['value']}' text='{d['label']}' />" for d in json.loads(arg_value)])

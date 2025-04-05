@@ -1,0 +1,9 @@
+<div style={{display: 'flex', flexDirection: 'column'}}>
+  <Select value=${language} onChange=${(e) => setLanguage(e.target.value)} options=${[ {"value": "English", "label": "English"}, {"value": "German", "label": "German"}, {"value": "Japanese", "label": "Japanese"} ]} />
+
+  <Text type=${"body"} content=${`You have selected: ${language}`} />
+
+  {language === "Japanese" && (
+    <Badge content=${"Beta"} type=${"warning"} />
+  )}
+</div>

@@ -1,0 +1,11 @@
+Create a WelcomeModal component that appears on page load and displays a welcome message and instructions.
+
+The Modal should include:
+
+A Text title ("Welcome!")
+
+A Text body ("Use the navigation menu to explore features.")
+
+A Button labeled "Got it" that closes the modal.
+
+The modal is controlled by "showWelcome".

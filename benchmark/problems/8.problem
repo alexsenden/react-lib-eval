@@ -1,0 +1,13 @@
+Create a ProfileSettings component that allows users to configure their profile. The layout should be as follows:
+
+At the top, show a Card component containing the user's Avatar with source "https://picsum.photos/100" and alt text "User Avatar".
+
+Next to the Avatar, display a Text component with the user’s name "Alex Smith".
+
+Below the Card, add a section titled "Privacy Settings".
+
+In this section, add a Toggle switch labeled "Make Profile Public", controlled by a variable called isPublic.
+
+Below the toggle, add a Select component to choose who can send messages, with the options: "Everyone", "Friends Only", "No One". This should be stored in a variable called messageAccess.
+
+At the bottom, include a Button labeled "Save Settings" that triggers a Toast with the message "Settings saved successfully!" when clicked. The toast should be controlled by the variable showSaved.

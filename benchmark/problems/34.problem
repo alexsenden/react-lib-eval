@@ -1,0 +1,13 @@
+Create a UserBadgeRow component that displays a list of users and their roles using Badge and Avatar components.
+
+Each user should be shown in a horizontal flex layout with their Avatar on the left and their name and role Badge on the right.
+
+Render three users:
+
+Alice – Admin
+
+Bob – Member
+
+Charlie – Guest
+
+Each Avatar should have a placeholder image ("https://picsum.photos/100") and the alt text should be the user's name.

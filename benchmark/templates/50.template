@@ -1,0 +1,21 @@
+<Card>
+  <div style={{display: 'flex', flexDirection: 'column'}}>
+    <Text type=${"title"} content=${"Event Details"} />
+
+    <div style={{display: 'flex', flexDirection: 'row'}}>
+      <Avatar src=${'https://picsum.photos/100'} alt=${'Organizer Avatar'} />
+      <Text type=${"body"} content=${"Organizer: John Doe"} />
+    </div>
+
+    <Text type=${"title"} content=${"React Summit 2025"} />
+    <Text type=${"body"} content=${"A gathering of the brightest minds in React."} />
+    
+    <ProgressBar progress=${50} totalSteps=${100} />
+
+    <Checkbox checked=${isSubscribed} onChange=${() => setIsSubscribed(!isSubscribed)} label=${"Subscribe for Event Updates"} />
+
+    <Button text=${"Show Event Updates"} type=${"primary"} onClick=${() => setShowModal(true)} />
+
+    <Modal isOpen=${showModal} onClose=${() => setShowModal(false)} title=${"Event Updates"} content=${<Text type=${'body'} content=${"Stay tuned for more information about React Summit 2025!"} />} />
+  </div>
+</Card>

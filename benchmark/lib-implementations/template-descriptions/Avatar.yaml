@@ -1,0 +1,7 @@
+props:
+  src:
+    type: string
+    description: URL of the avatar
+  alt:
+    type: string
+    description: Alt text for the avatar

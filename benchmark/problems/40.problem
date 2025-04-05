@@ -1,0 +1,7 @@
+Create a WelcomeModal component that displays when the user visits for the first time.
+
+The modal should show a single Text component with the message "Welcome to the app!".
+
+The modal is controlled by a variable called "showWelcome".
+
+The modal should close when the user clicks outside or presses the close button.

@@ -1,0 +1,4 @@
+<div style={{"display": "flex", "flexDirection": "column"}}>
+ <Button text=${"View Cart"} onClick=${() => setShowCart(true)} type=${"primary"} />
+ <Modal isOpen=${showCart} onClose=${() => setShowCart(false)} title=${"Your Cart"} content=${ <div style={{"display": "flex", "flexDirection": "column"}}> <List items=${cartItems} /> <Text type=${"body"} content=${`Total: $${totalPrice}`} /> <Button text=${"Checkout"} type=${"primary"} /> </div> } />
+</div>

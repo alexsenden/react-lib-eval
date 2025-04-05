@@ -1,0 +1,5 @@
+Create a UserProgress component to show task completion.
+
+A Text component says "Your Progress".
+
+Below that, show a ProgressBar with progress based on a tasksCompleted value out of 10.

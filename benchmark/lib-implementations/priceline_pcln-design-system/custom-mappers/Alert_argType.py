@@ -1,0 +1,1 @@
+{"info": "'blue'", "warning": "'orange'", "error": "'red'", "success": "'green'"}.get(arg_value)

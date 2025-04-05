@@ -1,0 +1,1 @@
+<Input disabled=${argDisabled} placeholder=${argPlaceholder} labelText=${argLabel} onChange=${argOnChange} value=${argValue} />

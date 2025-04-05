@@ -1,0 +1,7 @@
+Create a ProfileSettings component where users can update their profile settings.
+
+At the top, an Avatar shows the user's picture from "https://picsum.photos/100".
+
+Below that, an Input for full name, and another Input for email address.
+
+At the bottom, a Button labeled "Save Changes" triggers a Toast that says "Profile updated".

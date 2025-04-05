@@ -1,0 +1,6 @@
+transformers==4.48
+accelerate
+torch
+tree-sitter
+nltk
+rouge_score

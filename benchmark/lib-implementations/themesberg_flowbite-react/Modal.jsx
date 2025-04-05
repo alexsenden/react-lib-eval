@@ -1,0 +1,1 @@
+<Modal onClose=${argOnClose} popup=${argIsOpen} ><Modal.Header>${argTitle}</Modal.Header><Modal.Body>${argContent}</Modal.Body></Modal>

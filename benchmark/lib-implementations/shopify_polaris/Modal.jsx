@@ -1,0 +1,1 @@
+<Modal open=${argIsOpen} onClose=${argOnClose} title=${argTitle} ><Modal.Section>${argContent}</Modal.Section></Modal>

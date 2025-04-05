@@ -1,0 +1,21 @@
+Create a NotificationSystem component that handles different types of user notifications. The layout should be as follows:
+
+At the top, an Alert component displays an urgent warning message ("System Maintenance in 1 hour").
+
+Below the alert, a Button labeled "Show Notification" triggers a Modal component titled "Notification" containing detailed information.
+
+This detailed information should read "The system will be down from 1AM to 8AM for maintenance.".
+
+The modal is controlled with the "showModal" variable.
+
+The modal should include a Spinner while loading content before displaying the full message. 
+
+The code for the modal should be at the bottom of the component hierarchy.
+
+The content is loading if the "loading" variable is true.
+
+An informational Toast notification should appear at the bottom of the screen when a button to the right of the "Show Notification" button is clicked. This button should be labelled "Show Toast".
+
+The toast should have the text "The system will resume regular operation at 8AM."
+
+The toast should be controlled with a variable named "showToast".

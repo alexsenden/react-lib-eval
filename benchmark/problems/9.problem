@@ -1,0 +1,11 @@
+Create a SurveyForm component that collects user preferences. The layout should be as follows:
+
+At the top, display a title using a Text component that reads "Daily Habits Survey".
+
+Below the title, include a section labeled "Do you exercise daily?" with two RadioButton components for "Yes" and "No". The selected option should be stored in a variable named exercise.
+
+Below that, add a section labeled "Favorite Fruit" with a Select component. The options should be "Apple", "Banana", and "Orange", and the selected fruit should be stored in a variable named fruit.
+
+At the bottom, include a Button labeled "Submit Survey" that sets a variable submitted to true.
+
+If submitted is true, display a Toast component with the message "Survey submitted. Thank you!"

@@ -1,0 +1,13 @@
+props:
+  label:
+    type: string/code
+    description: The label of the checkbox.
+  checked:
+    type: boolean
+    description: Whether the checkbox is initially checked.
+  onChange:
+    type: function
+    description: A function that is called when the checkbox is toggled.
+  disabled:
+    type: boolean
+    description: Whether the checkbox is disabled.

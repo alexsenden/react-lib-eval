@@ -1,0 +1,10 @@
+props:
+  checked:
+    type: boolean
+    description: Whether the radio button is initially checked.
+  onChange:
+    type: function
+    description: A function that is called when the radio button is toggled.
+  label:
+    type: string/code
+    description: The label of the radio button.

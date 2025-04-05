@@ -1,0 +1,23 @@
+{
+  "name": "generic",
+  "version": "1.0.0",
+  "description": "A generic component library using Storybook.",
+  "author": "Alex Senden",
+  "license": "MIT",
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.4",
+    "storybook": "^8.5.7",
+    "@storybook/addon-essentials": "^8.5.7",
+    "@storybook/addon-interactions": "^8.5.7",
+    "@storybook/addon-onboarding": "^8.5.7",
+    "@storybook/blocks": "^8.5.7",
+    "@storybook/react": "^8.5.7",
+    "@storybook/react-vite": "^8.5.7",
+    "@storybook/test": "^8.5.7",
+    "prop-types": "^15.8.1"
+  },
+  "scripts": {
+    "storybook": "storybook dev -p 6005",
+    "build-storybook": "storybook build"
+  }
+}

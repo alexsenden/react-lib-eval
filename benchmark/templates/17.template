@@ -1,0 +1,4 @@
+<div style={{display: 'flex', flexDirection: 'column'}}>
+  <Toggle active=${darkMode} onChange=${() => setDarkMode(!darkMode)} />
+  <Badge content=${darkMode ? "Dark Mode" : "Light Mode"} type=${"primary"} />
+</div>

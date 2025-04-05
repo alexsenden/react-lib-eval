@@ -1,0 +1,11 @@
+<Card >
+  <div style={{display: 'flex', flexDirection: 'column'}}>
+    <Avatar src={"https://picsum.photos/100"} alt={"User Avatar"} />
+    <Badge text={isOnline ? "Online" : "Offline"} type={isOnline ? "success" : "error"} />
+    <Button text={"Toggle Status"} type={"primary"} onClick={() => { setIsOnline(!isOnline); setShowToast(true); }} />
+    {showToast && (
+      <Toast message={"Status updated."} type={"info"} onClose={() => setShowToast(false)} />
+    )}
+  </div>
+</Card>
+

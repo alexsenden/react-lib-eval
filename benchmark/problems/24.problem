@@ -1,0 +1,13 @@
+Create a SupportPortal component that shows a list of support topics in an Accordion.
+
+There should be 4 topics:
+
+"Password Reset": "Go to settings and click 'Reset Password'."
+
+"Billing Questions": "Email billing@example.com."
+
+"Technical Issues": "Submit a ticket at /support/ticket."
+
+"Account Deletion": "Visit /account/delete to begin the process."
+
+At the bottom, a Link labeled "Contact Support" links to "/support/contact".

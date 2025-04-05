@@ -1,0 +1,9 @@
+<Card>
+  <div style={{display: 'flex', flexDirection: 'column'}}>
+    <Text type=${"title"} content=${"User Preferences"} />
+    <Toggle active=${darkMode} onChange=${() => setDarkMode(!darkMode)} />
+    <Checkbox checked=${twoFA} onChange=${() => setTwoFA(!twoFA)} label=${"Enable 2FA"} />
+    <Select value=${timeZone} options=${[{"value": "PST", "label": "PST"}, {"value": "EST", "label": "EST"}, {"value": "GMT", "label": "GMT"}]} />
+    <Button text=${"Save Settings"} type=${'primary'} onClick=${handleSave} />
+  </div>
+</Card>

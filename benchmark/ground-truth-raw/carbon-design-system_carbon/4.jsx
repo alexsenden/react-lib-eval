@@ -1,0 +1,4 @@
+<div style={{display: 'flex', flexDirection: 'column'}}>
+  <Accordion ><AccordionItem title="What programs are available at the University of Manitoba?"><Text as='p' >{'The University of Manitoba offers programs in Arts, Science, Engineering, Business, Medicine, and more.'}</Text></AccordionItem><AccordionItem title="What are the admission requirements at the University of Manitoba?"><Text as='p' >{'Requirements vary by program but usually include high school grades and English proficiency (IELTS/TOEFL for international students).'}</Text></AccordionItem><AccordionItem title="How much is tuition at the University of Manitoba?"><Text as='p' >{'Domestic students pay lower fees, while international students typically pay $18,000-$26,000 per year.'}</Text></AccordionItem></Accordion>
+  <Link href={"/fullfaq"} >{"View More FAQs"}</Link>
+</div>

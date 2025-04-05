@@ -1,0 +1,1 @@
+<RadioLabel><RadioButton checked=${argChecked} onChange=${argOnChange} /><LabelText>${argLabel}</LabelText></RadioLabel>

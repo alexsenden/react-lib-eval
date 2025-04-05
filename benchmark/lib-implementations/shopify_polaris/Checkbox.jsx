@@ -1,0 +1,1 @@
+<Checkbox label=${argLabel} checked=${argChecked} onChange=${argOnChange} disabled=${argDisabled} />

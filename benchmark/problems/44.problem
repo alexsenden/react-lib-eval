@@ -1,0 +1,9 @@
+Create a LanguageSettings component where users pick their preferred UI language.
+
+Show a Select with options: English, German, Japanese.
+
+Based on the selected language, show a Text component below that says "You have selected: [Language]".
+
+If the selected language is Japanese, also show a Badge with content "Beta" and type "warning".
+
+The selected language is stored in "language".

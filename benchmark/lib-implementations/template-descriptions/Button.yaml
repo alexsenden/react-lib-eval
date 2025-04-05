@@ -1,0 +1,13 @@
+props:
+  onClick:
+    type: function
+    description: The function to be called when the button is clicked
+  type:
+    type: primary | success | warning | error
+    description: The type of the button
+  disabled:
+    type: boolean
+    description: Whether the button is disabled
+  text:
+    type: string/code
+    description: The text of the button

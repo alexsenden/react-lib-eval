@@ -1,0 +1,1 @@
+<Avatar source=${argSrc} accessibilityLabel=${argAlt} />

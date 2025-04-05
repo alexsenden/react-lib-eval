@@ -1,0 +1,1 @@
+<div style={{display: 'flex', flexDirection: 'row'}}><Checkbox checked=${argChecked} disabled=${argDisabled} onChange=${argOnChange} /><Text content=${argLabel} type='body' /></div>

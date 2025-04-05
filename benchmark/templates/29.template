@@ -1,0 +1,5 @@
+<div style={{"display": "flex", "flexDirection": "column"}}>
+  <Input value=${username} onChange=${(e) => setUsername(e.target.value)} label=${"Username"} />
+  <TextArea value=${status} onChange=${(e) => setStatus(e.target.value)} />
+  <Button text=${"Post"} onClick=${handlePost} type=${"primary"} />
+</div>

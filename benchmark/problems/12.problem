@@ -1,0 +1,9 @@
+Create a NewsletterSignup component that allows users to subscribe to a newsletter. The layout should be as follows:
+
+At the top, a Text component reads "Subscribe to our Newsletter".
+
+Below that, an Input for email, and a Checkbox labeled "Receive weekly updates".
+
+At the bottom, a Button labeled "Subscribe" triggers a variable subscribed to be set to true.
+
+When subscribed is true, display a Toast with the message "Thank you for subscribing!".

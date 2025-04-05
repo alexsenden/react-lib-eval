@@ -1,0 +1,13 @@
+props:
+  isOpen:
+    type: boolean
+    description: Whether the modal is open.
+  onClose:
+    type: function
+    description: A function that is called when the modal is closed.
+  title:
+    type: string/code
+    description: The title of the modal.
+  content: 
+    type: element
+    description: The content of the modal.

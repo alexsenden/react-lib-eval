@@ -1,0 +1,1 @@
+'{[' + ', '.join([f'{{"headerLabel": <Text>{d["title"]}</Text>, content: {d["content"]}}}' for d in json.loads(arg_value.replace('"content": ', '"content": "').replace('>},', '>"},').replace('>}]', '>"}]'))]) + ']}'

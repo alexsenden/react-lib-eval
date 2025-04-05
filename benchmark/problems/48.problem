@@ -1,0 +1,35 @@
+Create a JobApplicationPortal component to simulate submitting a job application.
+
+The layout should be:
+
+A Text header: "Apply for a Position"
+
+A Select for the job role, with options "Frontend Developer", "Backend Developer", and "UI/UX Designer"
+
+When a role is selected, show an Input for full name
+
+A TextArea for a cover letter
+
+A Checkbox to agree to terms and conditions
+
+A Button labeled "Submit Application" that opens a Modal if the checkbox is selected
+
+The Modal should contain a single Spinner while submitting
+
+After 2 seconds, the Modal should close and a Toast should display "Application submitted!"
+
+Variables:
+
+"selectedRole" (string)
+
+"fullName" (string)
+
+"coverLetter" (string)
+
+"agreed" (boolean)
+
+"showModal" (boolean)
+
+"submitting" (boolean)
+
+"showToast" (boolean)

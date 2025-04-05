@@ -1,0 +1,1 @@
+<Modal modalHeading=${argTitle} open=${argIsOpen} onRequestClose=${argOnClose} >${argContent}</Modal>

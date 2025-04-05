@@ -1,0 +1,13 @@
+Create a ContactSupportForm component that allows users to get in touch with support. The layout should be as follows:
+
+At the top, a Text component displays the title "Contact Support".
+
+Below the title, an Input field for the user's name, and underneath that, another Input field for the user's email address.
+
+Below the email field, a TextArea labeled "Message" for the user to describe their issue.
+
+Below the message, a Toggle labeled "Subscribe to Updates" allows the user to opt-in to email updates.
+
+At the bottom, a Button labeled "Submit" sends the form. Clicking the button should show a Toast message that says "Your message has been submitted!" if the name, email, and message fields are all filled in.
+
+The values for name, email, and message should be stored in variables called "name", "email", and "message" respectively. The toggle should be stored in "subscribe". The Toast visibility should be stored in "showToast".

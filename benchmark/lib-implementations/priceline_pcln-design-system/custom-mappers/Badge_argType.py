@@ -1,0 +1,1 @@
+"{" + arg_value.replace("primary", "'blue'").replace("warning", "'orange'").replace("error", "'red'").replace("success", "'green'").replace("\"'", "'").replace("'\"", "'") + "}"

@@ -1,0 +1,7 @@
+Create a ReminderCard component that displays an upcoming reminder.
+
+A Card contains a title using Text: "Upcoming Reminder".
+
+Inside, show a Text: "Dentist appointment at 3:00 PM".
+
+Below that, a Button labeled "Snooze" triggers a Toast: "Reminder snoozed for 10 minutes".

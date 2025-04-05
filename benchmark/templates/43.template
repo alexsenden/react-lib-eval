@@ -1,0 +1,17 @@
+<div style={{display: 'flex', flexDirection: 'column'}}>
+  <Toggle active=${advanced} onChange=${() => setAdvanced(!advanced)} />
+
+  {advanced ? (
+    <Card>
+      <div style={{display: 'flex', flexDirection: 'column'}}>
+        <Text type=${"title"} content=${"Advanced Settings"} />
+        <Checkbox checked=${experimental} onChange=${() => setExperimental(!experimental)} label=${"Enable experimental features"} />
+        {loadingAdvanced && <Spinner />}
+      </div>
+    </Card>
+  ) : (
+    <Card>
+      <Text type=${"body"} content=${"Basic settings are enabled."} />
+    </Card>
+  )}
+</div>

@@ -1,0 +1,13 @@
+<Card>
+  <div style={{display: 'flex', flexDirection: 'column'}}>
+    <Select value=${theme} onChange=${(e) => setTheme(e.target.value)} options=${[ {"value": "Light", "label": "Light"}, {"value": "Dark", "label": "Dark"}, {"value": "Solarized", "label": "Solarized"} ]} />
+
+    <Toggle active=${highContrast} onChange=${() => setHighContrast(!highContrast)} />
+
+    <Text type=${"body"} content=${`Preview text in ${theme} mode`} />
+
+    <Button text=${"Apply Settings"} type=${"primary"} onClick=${() => setShowModal(true)} />
+
+    <Modal isOpen=${showModal} onClose=${() => setShowModal(false)} title=${"Success"} content=${<Text type=${"body"} content=${"Theme applied."} />} />
+  </div>
+</Card>

@@ -1,0 +1,11 @@
+Create a ShoppingCartSummary component. Display a summary of selected items inside a Modal, opened by clicking "View Cart".
+
+Inside the Modal:
+
+A List of items in the cart (stored in "cartItems").
+
+A Text component with the total price (stored in "totalPrice").
+
+A Button labeled "Checkout".
+
+The modal is controlled with "showCart".

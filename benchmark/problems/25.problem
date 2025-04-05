@@ -1,0 +1,13 @@
+Create a QuizSummary component that displays quiz results inside a Modal.
+
+A Button labeled "View Summary" opens a Modal controlled by the variable "showSummary".
+
+Inside the Modal:
+
+A Text component showing the score, e.g., "You scored 8/10".
+
+A ProgressBar showing percentage complete (80%).
+
+A List of incorrectly answered questions (stored in "wrongAnswers").
+
+At the bottom of the Modal, a Button labeled "Close".
