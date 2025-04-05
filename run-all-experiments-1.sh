@@ -17,7 +17,7 @@ llms=(
     "deepseek-coder-v2",
 )
 
-module load cuda/12.4.1 arch/avx2 gcc/13.2.0 python/3.11.11
+module load cuda/12.4.1 arch/avx2 gcc/13.2.0 python/3.11.11 nodejs/22.11.0
 
 source ~/env/env_llm/bin/activate
 
@@ -25,18 +25,18 @@ pip install -r requirements.txt
 
 for llm in "${llm_list[@]}"; do
     echo "Starting ${llm} with both stories and implementation at: `date`"
-    python 
+    python main.py --model=$llm --allowStories=true --allowImpl=true --trialName=$llm-both 
     echo "${llm} with both stories and implementation finished with exit code $? at: `date`"
 
     echo "Starting ${llm} with just stories at: `date`"
-    python 
+    python main.py --model=$llm --allowStories=true --allowImpl=false --trialName=$llm-stories  
     echo "${llm} with just stories finished with exit code $? at: `date`"
 
     echo "Starting ${llm} with just implementation at: `date`"
-    python 
+    python main.py --model=$llm --allowStories=false --allowImpl=true --trialName=$llm-impl  
     echo "${llm} with just implementation finished with exit code $? at: `date`"
 
     echo "Starting ${llm} with neither stories nor implementation at: `date`"
-    python 
+    python main.py --model=$llm --allowStories=false --allowImpl=false --trialName=$llm-neither  
     echo "${llm} with neither stories nor implementation finished with exit code $? at: `date`"
 done
