@@ -40,7 +40,12 @@ class RagDB:
             path=persist_dir,
         )
         # Collection names must be between 3 and 63 characters
-        self.collection_name = persist_dir.replace("/", "-").replace("_", "").replace("-", "").replace(".", "")[:50]
+        self.collection_name = (
+            persist_dir.replace("/", "-")
+            .replace("_", "")
+            .replace("-", "")
+            .replace(".", "")[:50]
+        )
         self.collection = self.chroma_client.create_collection(
             name=self.collection_name
         )

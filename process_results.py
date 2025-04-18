@@ -18,10 +18,7 @@ metrics = [
     "rouge2r",
 ]
 
-models = [
-    "Llama-3",
-    "DeepSeek"
-]
+models = ["Llama-3", "DeepSeek"]
 
 
 def clear_zeros(df):
@@ -72,14 +69,14 @@ def get_failure_rate_whole_file(csv_path):
     print(csv_path)
     print(f"{len(df) * 100 / NUM_TASKS}%")
     print("\n\n")
-    
+
+
 def get_failure_rate_by_lib(csv_path):
     df = pd.read_csv(csv_path)
     df = clear_zeros(df)
     print(csv_path)
     print(f'{df["library"].value_counts()* 100 / TASKS_PER_LIB}%')
     print("\n\n")
-    
 
 
 def main():
@@ -88,11 +85,15 @@ def main():
 
     for dir in dirs:
         csv_path = f"{GENERATED_DIR}/{dir}/{RESULTS_FILE_NAME}"
-        if os.path.isfile(csv_path) and "both" in csv_path and (any([model in csv_path for model in models])):
+        if (
+            os.path.isfile(csv_path)
+            and "both" in csv_path
+            and (any([model in csv_path for model in models]))
+        ):
             # RQ4
             get_failure_rate_by_lib(csv_path)
             process_single_trial_by_lib(csv_path)
-            
+
             # RQ3
             # get_failure_rate_whole_file(csv_path)
             # process_whole_single_trial(csv_path)

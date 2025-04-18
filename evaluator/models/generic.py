@@ -74,4 +74,4 @@ Assume any necessary provider wrappers are already present higher in the compone
         )
         return self.tokenizer.decode(
             outputs[0][len(inputs[0]) :], skip_special_tokens=True
-        ) 
+        )

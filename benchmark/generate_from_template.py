@@ -176,7 +176,10 @@ def replace_arg(
 
         # return implementation.replace(f"${{{transformedArgName}}}", arg_value)
     return regex.sub(
-        ALPHANUMERIC_REGEX + rf"=\${{{transformedArgName}}}", "", implementation, count=1
+        ALPHANUMERIC_REGEX + rf"=\${{{transformedArgName}}}",
+        "",
+        implementation,
+        count=1,
     )
 
 
@@ -190,7 +193,7 @@ def handle_component(
 ):
     if DEBUG:
         print(f"Handling component: {tag_name}")
-    
+
     # If the tag is a closing tag, replace the component name and return
     if regex.match(CLOSING_TAG_REGEX, template_line) != None:
         template_line = regex.sub(WHITESPACE_REGEX, "", template_line)
@@ -210,7 +213,7 @@ def handle_component(
     # Get the args from the template and substitute them into the implementation
     args_result = regex.findall(ARGS_REGEX, template_line)
     if DEBUG:
-      print(f"Args result: {args_result}")
+        print(f"Args result: {args_result}")
     for arg in args_result:
         arg_name = arg[0]
         arg_value = arg[1]
@@ -242,7 +245,7 @@ def generate_from_template(library, output_dir, path_prefix=""):
         raise ValueError(
             "Invalid library: {}. Options are: {}".format(library, LIBRARIES)
         )
-        
+
     global path
     path = path_prefix
 

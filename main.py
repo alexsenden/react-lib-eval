@@ -96,7 +96,7 @@ def main():
         generate_from_template(
             library, f"{output_folder}/gt-raw", path_prefix="benchmark/"
         )
-        
+
         os.system(
             f"cd ./postprocessor/linter; node {POSTPROCESSOR_SCRIPT} inputDir=../../{output_folder}/gt-raw/{library} outputDir=../../{output_folder}/gt/{library}"
         )
