@@ -1,7 +1,0 @@
-props:
-  content: 
-    type: string/code
-    description: The content of the badge
-  type:
-    type: primary | success | warning | error
-    description: The type of the badge

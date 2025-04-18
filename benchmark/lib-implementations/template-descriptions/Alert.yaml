@@ -1,7 +1,0 @@
-props: 
-  type: 
-    type: info | warning | error | success
-    description: The type of the alert
-  content:
-    type: string/code
-    description: The content of the alert
