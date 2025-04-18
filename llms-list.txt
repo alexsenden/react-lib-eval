@@ -1,3 +1,0 @@
-deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
-codellama/CodeLlama-7b-Instruct-hf
-meta-llama/Llama-3.1-8B

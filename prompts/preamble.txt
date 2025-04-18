@@ -1,7 +1,0 @@
-Actually write it, but include these features:
-
-Use div elements with the style prop's `display: flex` and `flexDirection` parameters to control layout
-Do not use css or tailwind css
-Only use library components or html components
-Use as few components as necessary, and pass as few props as necessary.
-Assume any necessary provider wrappers are already present higher in the component hierarchy (i.e. ThemeProvider, ToastProvider, etc.)

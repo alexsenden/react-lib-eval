@@ -10,20 +10,22 @@
 #SBATCH --mail-user=sendena@myumanitoba.ca
 #SBATCH --mail-type=ALL
 
-export HF_HOME=~/projects/def-cjhuofw-ab/sendena/hf-cache
+set -x
 
-llms=(
-    "codellama-7b",
-    "codellama-13b",
-)
+export HF_HOME=~/projects/def-cjhuofw-ab/sendena/hf-cache
 
 module load cuda/12.4.1 arch/avx2 gcc/13.2.0 python/3.11.11 nodejs/22.11.0
 
 source ~/env/env_llm/bin/activate
 
-pip install -r requirements.txt
+# pip install -r requirements.txt
 
-for llm in "${llm_list[@]}"; do
+llms=(
+    "codellama-7b"
+    "codellama-13b"
+)
+
+for llm in "${llms[@]}"; do
     echo "Starting ${llm} with both stories and implementation at: `date`"
     python main.py --model=$llm --allowStories=true --allowImpl=true --trialName=$llm-both 
     echo "${llm} with both stories and implementation finished with exit code $? at: `date`"

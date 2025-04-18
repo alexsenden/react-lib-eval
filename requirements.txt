@@ -8,3 +8,4 @@ torch==2.6.0
 tree-sitter==0.24.0
 tree-sitter-javascript==0.23.1
 transformers==4.48
+pysqlite3-binary==0.5.4

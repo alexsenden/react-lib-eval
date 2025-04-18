@@ -23,7 +23,7 @@ const Accordion = ({ items }) => {
               activeIndex === index ? "expanded" : "collapsed"
             }`}
           >
-            <p>{item.content}</p>
+            {item.content}
           </div>
         </div>
       ))}

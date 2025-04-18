@@ -4,8 +4,8 @@ import os
 from sentence_transformers import SentenceTransformer
 
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
-CHUNK_SIZE_CHARS = 200
-RETRIEVED_SNIPPETS = 8
+CHUNK_SIZE_CHARS = 1000
+RETRIEVED_SNIPPETS = 6
 
 
 def allow_addition(filename, allow_stories, allow_impl):
@@ -35,9 +35,15 @@ def valid_path(path):
 
 
 class RagDB:
-    def __init__(self):
-        self.chroma_client = chromadb.Client()
-        self.collection = self.chroma_client.create_collection(name="library")
+    def __init__(self, persist_dir):
+        self.chroma_client = chromadb.PersistentClient(
+            path=persist_dir,
+        )
+        # Collection names must be between 3 and 63 characters
+        self.collection_name = persist_dir.replace("/", "-").replace("_", "").replace("-", "").replace(".", "")[:50]
+        self.collection = self.chroma_client.create_collection(
+            name=self.collection_name
+        )
         self.embedder = SentenceTransformer(EMBEDDING_MODEL)
 
     def add_file_to_db(self, file_path):
@@ -68,7 +74,7 @@ class RagDB:
                 ) and allow_addition(file, allow_stories, allow_impl):
                     file_path = os.path.join(root, file)
                     if valid_path(file_path):
-                        print(f"Adding {file_path} to ChromaDB...")
+                        print(f"Adding {file_path} to ChromaDB...", flush=True)
                         self.add_file_to_db(file_path)
 
     def retrieve_relevant_code(self, query):
@@ -85,4 +91,4 @@ class RagDB:
         return "\n\n".join(retrieved_snippets)
 
     def cleanup(self):
-        self.chroma_client.delete_collection(name="library")
+        self.chroma_client.delete_collection(name=self.collection_name)

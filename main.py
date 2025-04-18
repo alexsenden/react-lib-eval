@@ -23,10 +23,10 @@ VALID_MODELS = [
 
 VALID_LIBRARIES = [
     "generic",
-    # "priceline_pcln-design-system",
-    # "themesberg_flowbite-react",
-    # "shopify_polaris",
-    # "carbon-design-system_carbon",
+    "priceline_pcln-design-system",
+    "themesberg_flowbite-react",
+    "shopify_polaris",
+    "carbon-design-system_carbon",
 ]
 
 POSTPROCESSOR_SCRIPT = "run-linter.js"
@@ -63,22 +63,21 @@ def parse_args():
     )
 
     args = parser.parse_args()
-    
-    
+
     args.allowStories = args.allowStories.lower() == "true"
     args.allowImpl = args.allowImpl.lower() == "true"
 
-    if not args.model in VALID_MODELS:
-        raise ValueError(
-            f"Model {args.model} not found in list of acceptable models: [{', '.join(VALID_MODELS)}]"
-        )
+    # if not args.model in VALID_MODELS:
+    #     raise ValueError(
+    #         f"Model {args.model} not found in list of acceptable models: [{', '.join(VALID_MODELS)}]"
+    #     )
 
     return args
 
 
 def main():
     args = parse_args()
-    
+
     print(args)
 
     # Craete directory for this trial's output
@@ -97,18 +96,22 @@ def main():
         generate_from_template(
             library, f"{output_folder}/gt-raw", path_prefix="benchmark/"
         )
+        
         os.system(
             f"cd ./postprocessor/linter; node {POSTPROCESSOR_SCRIPT} inputDir=../../{output_folder}/gt-raw/{library} outputDir=../../{output_folder}/gt/{library}"
         )
         os.system(f"rm -rf {output_folder}/gt-raw")
 
         # Initialize RAG DB and add library to it
-        rag_db = RagDB()
+        print("Creating RAG DB...", flush=True)
+        os.makedirs(f"{output_folder}/rag_db/{library}")
+        rag_db = RagDB(persist_dir=f"{output_folder}/rag_db/{library}")
         rag_db.add_dir_to_chromadb(
             f"libraries/{library}",
             allow_stories=args.allowStories,
             allow_impl=args.allowImpl,
         )
+        print("RAG DB created.", flush=True)
 
         # Create directory for this library's output
         os.makedirs(f"{output_folder}/prediction-raw/{library}")
